@@ -79,18 +79,13 @@ html(lang='en')
                     .subheading.mb-5
                         | Milan, Italy ·
                         a(href='mailto:info@gabrielemarra.tech') info@gabrielemarra.tech
-                    p.lead.mb-5
-                        | As a
+                    p.lead.mb-4
                         strong Software Engineer
                         | specializing in
                         strong space cybersecurity,
-                        | my passion for technology extends to space exploration, underpinned by my interests in science, music, and sports. My journey has led me from academic research to practical, real-world applications, giving me a diverse skill set. My most notable achievements include leading
-                        strong satellite software development
-                        | for a CubeSat mission and
-                        strong overseeing security
-                        | for an open-source satellite OS project. I currently work on secure satellite communications and ground-segment software, where I focus on turning advanced security concepts into production-ready systems.
+                        | with experience across research, product engineering, and satellite software. I build secure, production-ready systems for space and ground segments, from containerized services and mission-control integrations to flight software and simulation tooling. Across industry and research, I have led satellite flight software initiatives and contributed to security-focused products in the space domain.
                     p.lead.mb-5
-                        | With a Master's degree in Computer Engineering, research experience, publications in the space security domain, and hands-on freelance and product engineering work, I am driven to make a meaningful impact in environments that value ambitious, reliable, and security-conscious software.
+                        | Alongside industry work, I hold a Master's degree in Computer Engineering and have contributed to research published at NDSS and 3S in the space security domain. I am comfortable moving between system design, implementation, integration, and security-focused problem solving, with hands-on experience in Rust, Python, Java, gRPC, and embedded and backend software.
                     .social-icons.mb-5
                         a.social-icon(href='mailto:info@gabrielemarra.tech')
                             i.fa.fa-envelope
@@ -131,12 +126,19 @@ html(lang='en')
                             h3.mb-0 Space Cybersecurity Researcher
                             .subheading.mb-3 CISPA - Helmholtz Centre for Information Security
                             p
-                                | Contributed to two research projects at CISPA. First, I designed an application sandboxing solution for 
+                                | Contributed to
+                                strong two research projects
+                                | at CISPA. First, I designed an
+                                strong application sandboxing solution
+                                | for
                                 //TODO add "target='_blank' rel='noopener noreferrer'" here and not only in the html
                                 a(href='https://www.tu.berlin/en/raumfahrttechnik/research/current-projects/raccoon') RACCOON OS,
-                                | an open-source satellite operating system developed on Yocto Linux with leading universities, assessing the feasibility of secure application isolation for space missions.
+                                | an open-source satellite operating system developed on Yocto Linux with leading universities, assessing the feasibility of secure application isolation for space missions. This work later led to the SpaceSec 2024 paper
+                                a(href='#sandboxing-in-space-paper') Sandboxing in Space.
                             p
-                                | Second, I designed and developed a satellite simulator and honeypot to emulate satellite and ground-station behavior for cybersecurity research. This work later led to the NDSS 2026 paper
+                                | Second, I designed and developed a
+                                strong satellite simulator and honeypot
+                                | to emulate satellite and ground-station behavior for cybersecurity research. This work later led to the NDSS 2026 paper
                                 a(href='#honeysat-paper') HoneySat.
                         .flex-shrink-0
                             span.text-primary 10/2023 - 03/2024
@@ -147,7 +149,9 @@ html(lang='en')
                             h3.mb-0 Flight Software Engineer - CubeSat Mission
                             .subheading.mb-3 PoliSpace Association
                             p
-                                | Led a team of four software engineers in flight software testing and requirements definition. Actively collaborated on the creation of secure and well-designed CubeSat software, balancing software quality, mission constraints, and cross-team coordination.
+                                strong Led a team of four software engineers
+                                | in flight software testing and requirements definition. Actively collaborated on the creation of secure and well-designed CubeSat software,
+                                | balancing software quality, mission constraints, and cross-team coordination.
                         .flex-shrink-0
                             span.text-primary 11/2021 - 09/2023
                             .span.text-secondary Milan, Italy
@@ -158,7 +162,9 @@ html(lang='en')
                             h3.mb-0 Software Engineer Freelancer
                             .subheading.mb-3 Level11 Software on Fiverr
                             p
-                                | Developed various software solutions, including web apps, backends, and neural network algorithms for multiple clients. I gained experience in working with lots of tasks for numerous customers.
+                                | Developed various software solutions, including
+                                strong web apps, backends, and neural network algorithms
+                                | for multiple clients. I gained experience in working with lots of tasks for numerous customers.
                         .flex-shrink-0
                             span.text-primary 2022 - Present
 
@@ -175,7 +181,7 @@ html(lang='en')
                         i HoneySat: A Network-based Satellite Honeypot Framework.
                         | NDSS 2026.
                         a(href='https://www.ndss-symposium.org/wp-content/uploads/2026-f537-paper.pdf') (PDF on NDSS Website)
-                    p
+                    p#sandboxing-in-space-paper
                         strong Marra, G.,
                         | Planta, U., Wüstenberg, P., & Abbasi, A. (2024).
                         i On the Feasibility of CubeSats Application Sandboxing for Space Missions.
