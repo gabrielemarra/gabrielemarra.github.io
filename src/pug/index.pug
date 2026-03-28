@@ -105,10 +105,14 @@ html(lang='en')
                 .resume-section-content
                     h2.mb-5 Experience
 
-                    .resume-entry.d-flex.flex-column.flex-md-row.justify-content-between.mb-5
-                        .resume-entry-main.flex-grow-1
+                    .resume-entry.mb-5
+                        .resume-entry-header
                             h3.mb-0 Software Security Engineer
                             .subheading.mb-3 CYSEC
+                        .resume-entry-meta
+                            span.text-primary 01/2025 - Present
+                            .span.text-secondary Toulouse, France
+                        .resume-entry-body
                             p
                                 | Responsible for the ground-side development of
                                 strong ARCA Satlink,
@@ -117,14 +121,15 @@ html(lang='en')
                                 | My work includes delivering and maintaining a containerized
                                 strong gRPC
                                 | service for securing CCSDS TC, TM, AOS, and USLP Frames, improving reliability, packaging, and release quality for production deployments. I also extended SDLS capabilities through custom Extended Procedures and developed a demo MCS and UI to support integration validation and product demonstrations.
-                        .resume-entry-meta.flex-shrink-0
-                            span.text-primary 01/2025 - Present
-                            .span.text-secondary Toulouse, France
 
-                    .resume-entry.d-flex.flex-column.flex-md-row.justify-content-between.mb-5
-                        .resume-entry-main.flex-grow-1
+                    .resume-entry.mb-5
+                        .resume-entry-header
                             h3.mb-0 Space Cybersecurity Researcher
                             .subheading.mb-3 CISPA - Helmholtz Centre for Information Security
+                        .resume-entry-meta
+                            span.text-primary 10/2023 - 03/2024
+                            .span.text-secondary Saarbrücken, Germany
+                        .resume-entry-body
                             p
                                 | Contributed to
                                 strong two research projects
@@ -140,33 +145,32 @@ html(lang='en')
                                 strong satellite simulator and honeypot
                                 | to emulate satellite and ground-station behavior for cybersecurity research. This work later led to the NDSS 2026 paper
                                 a(href='#honeysat-paper') HoneySat.
-                        .resume-entry-meta.flex-shrink-0
-                            span.text-primary 10/2023 - 03/2024
-                            .span.text-secondary Saarbrücken, Germany
 
-                    .resume-entry.d-flex.flex-column.flex-md-row.justify-content-between.mb-5
-                        .resume-entry-main.flex-grow-1
+                    .resume-entry.mb-5
+                        .resume-entry-header
                             h3.mb-0 Flight Software Engineer - CubeSat Mission
                             .subheading.mb-3 PoliSpace Association
+                        .resume-entry-meta
+                            span.text-primary 11/2021 - 09/2023
+                            .span.text-secondary Milan, Italy
+                        .resume-entry-body
                             p
                                 strong Led a team of four software engineers
                                 | in flight software testing and requirements definition. Actively collaborated on the creation of secure and well-designed CubeSat software,
                                 | balancing software quality, mission constraints, and cross-team coordination.
-                        .resume-entry-meta.flex-shrink-0
-                            span.text-primary 11/2021 - 09/2023
-                            .span.text-secondary Milan, Italy
 
 
-                    .resume-entry.d-flex.flex-column.flex-md-row.justify-content-between.mb-5
-                        .resume-entry-main.flex-grow-1
+                    .resume-entry.mb-5
+                        .resume-entry-header
                             h3.mb-0 Software Engineer Freelancer
                             .subheading.mb-3 Level11 Software on Fiverr
+                        .resume-entry-meta
+                            span.text-primary 2022 - Present
+                        .resume-entry-body
                             p
                                 | Developed various software solutions, including
                                 strong web apps, backends, and neural network algorithms
                                 | for multiple clients. I gained experience in working with lots of tasks for numerous customers.
-                        .resume-entry-meta.flex-shrink-0
-                            span.text-primary 2022 - Present
 
             hr.m-0
 
@@ -202,30 +206,32 @@ html(lang='en')
                 .resume-section-content
                     h2.mb-5 Education
 
-                    .resume-entry.d-flex.flex-column.flex-md-row.justify-content-between.mb-5
-                        .resume-entry-main.flex-grow-1
+                    .resume-entry.mb-5
+                        .resume-entry-header
                             h3.mb-0 Master of Science in Computer Engineering
                             .subheading.mb-3 Politecnico di Milano
-                            div Focusing on cybersecurity and deep learning courses.
-                            | Relevant courses: Computer Security, Offensive and Defensive Cybersecurity, Internet of Things, Artiﬁcial Neural Networks, Advanced Operating Systems, and Uncertainty in AI.
-                        .resume-entry-meta.flex-shrink-0
+                        .resume-entry-meta
                             span.text-primary 2021 - 2024
                             .span.text-secondary Milan, Italy
+                        .resume-entry-body
+                            div Focusing on cybersecurity and deep learning courses.
+                            | Relevant courses: Computer Security, Offensive and Defensive Cybersecurity, Internet of Things, Artiﬁcial Neural Networks, Advanced Operating Systems, and Uncertainty in AI.
 
-                    .resume-entry.d-flex.flex-column.flex-md-row.justify-content-between.mb-5
-                        .resume-entry-main.flex-grow-1
+                    .resume-entry.mb-5
+                        .resume-entry-header
                             h3.mb-0 Erasmus+ program in M.Sc. Computer Science
                             .subheading.mb-3 Universität Konstanz
-                            | Relevant courses: Big Data Management and Analysis, Deep Learning for Computer Vision, Biorobotics, and Physical Computing.
-                        .resume-entry-meta.flex-shrink-0
+                        .resume-entry-meta
                             span.text-primary 03/2022 - 09/2022
                             .span.text-secondary Konstanz, Germany
+                        .resume-entry-body
+                            | Relevant courses: Big Data Management and Analysis, Deep Learning for Computer Vision, Biorobotics, and Physical Computing.
 
-                    .resume-entry.d-flex.flex-column.flex-md-row.justify-content-between.mb-5
-                        .resume-entry-main.flex-grow-1
+                    .resume-entry.mb-5
+                        .resume-entry-header
                             h3.mb-0 Bachelor’s Degree in Computer Engineering
                             .subheading.mb-3 Politecnico di Milano
-                        .resume-entry-meta.flex-shrink-0
+                        .resume-entry-meta
                             span.text-primary 2017 - 2021
                             .span.text-secondary Milan, Italy
 
@@ -267,6 +273,16 @@ html(lang='en')
                         li
                             span.fa-li
                                 i.fas.fa-check
+                            | gRPC
+
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | Protocol Buffers
+
+                        li
+                            span.fa-li
+                                i.fas.fa-check
                             | Web App Development
 
                         li
@@ -282,22 +298,22 @@ html(lang='en')
                         li
                             span.fa-li
                                 i.fas.fa-check
-                            | gRPC
+                            | PostgreSQL
 
                         li
                             span.fa-li
                                 i.fas.fa-check
-                            | Protocol Buffers
-
-                        li
-                            span.fa-li
-                                i.fas.fa-check
-                            | ROS2
+                            | MySQL
 
                         li
                             span.fa-li
                                 i.fas.fa-check
                             | MongoDB
+
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | ROS2
 
                     .subheading.mb-3.mt-4 Additional Technical Areas
                     ul.fa-ul.mb-0

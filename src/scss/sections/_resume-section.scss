@@ -17,8 +17,22 @@ section.resume-section {
 }
 
 .resume-entry {
+    display: flex;
+    flex-direction: column;
+
+    .resume-entry-header,
+    .resume-entry-body,
     .resume-entry-meta {
-        margin-top: 1rem;
+        min-width: 0;
+    }
+
+    .resume-entry-meta {
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    .resume-entry-body > :last-child {
+        margin-bottom: 0;
     }
 }
 
@@ -30,17 +44,25 @@ section.resume-section {
     .resume-entry {
         display: grid !important;
         grid-template-columns: minmax(0, 1fr) 17rem;
+        grid-template-areas:
+            "header meta"
+            "body meta";
         column-gap: 2rem;
         align-items: start;
     }
 
-    .resume-entry .resume-entry-main,
-    .resume-entry .resume-entry-meta {
-        min-width: 0;
+    .resume-entry .resume-entry-header {
+        grid-area: header;
+    }
+
+    .resume-entry .resume-entry-body {
+        grid-area: body;
     }
 
     .resume-entry .resume-entry-meta {
+        grid-area: meta;
         margin-top: 0;
+        margin-bottom: 0;
         text-align: left;
     }
 }
