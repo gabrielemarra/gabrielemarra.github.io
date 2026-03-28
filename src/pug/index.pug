@@ -53,11 +53,13 @@ html(lang='en')
                     li.nav-item
                         a.nav-link.js-scroll-trigger(href='#experience') Experience
                     li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#publications') Publications
+                    li.nav-item
                         a.nav-link.js-scroll-trigger(href='#education') Education
                     li.nav-item
                         a.nav-link.js-scroll-trigger(href='#skills') Skills
                     li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#publications') Publications
+                        a.nav-link.js-scroll-trigger(href='#languages') Languages
                     li.nav-item
                         a.nav-link.js-scroll-trigger(href='#achievements') Achievements
 
@@ -86,9 +88,9 @@ html(lang='en')
                         strong satellite software development
                         | for a CubeSat mission and
                         strong overseeing security
-                        | for an open-source satellite OS project.
+                        | for an open-source satellite OS project. I currently work on secure satellite communications and ground-segment software, where I focus on turning advanced security concepts into production-ready systems.
                     p.lead.mb-5
-                        | With a Master's degree in Computer Engineering and experience as a freelancer, I am driven to make a meaningful impact in a company or research center that shares my enthusiasm for pushing the boundaries of technology.
+                        | With a Master's degree in Computer Engineering, research experience, publications in the space security domain, and hands-on freelance and product engineering work, I am driven to make a meaningful impact in environments that value ambitious, reliable, and security-conscious software.
                     .social-icons.mb-5
                         a.social-icon(href='mailto:info@gabrielemarra.tech')
                             i.fa.fa-envelope
@@ -98,7 +100,7 @@ html(lang='en')
                             i.fab.fa-github
                     p
                         small
-                            | Last updated: September 2024
+                            | Last updated: March 2026
 
 
             hr.m-0
@@ -110,13 +112,34 @@ html(lang='en')
 
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
+                            h3.mb-0 Software Security Engineer
+                            .subheading.mb-3 CYSEC
+                            p
+                                | Working on secure space-ground communications with a focus on
+                                strong Rust,
+                                | containerized services, and production-grade delivery. I own
+                                strong Satlink Ground,
+                                | a service for securing CCSDS telecommand and telemetry frames, and I support customer integrations from implementation to deployment.
+                            p
+                                | My work includes delivering a containerized
+                                strong gRPC
+                                | service, pushing releases to production readiness, and improving reliability, packaging, and release quality. I also extended SDLS capabilities through custom Extended Procedures, a demo MCS, and a UI used to validate integrations and showcase product value.
+                        .flex-shrink-0
+                            span.text-primary 01/2025 - Present
+                            .span.text-secondary Toulouse, France
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
                             h3.mb-0 Space Cybersecurity Researcher
                             .subheading.mb-3 CISPA - Helmholtz Centre for Information Security
                             p
-                                | Overseeing security for
+                                | Contributed to two research projects at CISPA. First, I designed an application sandboxing solution for 
                                 //TODO add "target='_blank' rel='noopener noreferrer'" here and not only in the html
                                 a(href='https://www.tu.berlin/en/raumfahrttechnik/research/current-projects/raccoon') RACCOON OS,
-                                | a new open-source satellite OS project in collaboration with leading universities. Responsible for designing and implementing application isolation solutions within the OS while ensuring high reliability and minimal performance overhead.
+                                | an open-source satellite operating system developed on Yocto Linux with leading universities, assessing the feasibility of secure application isolation for space missions.
+                            p
+                                | Second, I designed and developed a satellite simulator and honeypot to emulate satellite and ground-station behavior for cybersecurity research. This work later led to the NDSS 2026 paper
+                                a(href='#honeysat-paper') HoneySat.
                         .flex-shrink-0
                             span.text-primary 10/2023 - 03/2024
                             .span.text-secondary Saarbrücken, Germany
@@ -126,7 +149,7 @@ html(lang='en')
                             h3.mb-0 Flight Software Engineer - CubeSat Mission
                             .subheading.mb-3 PoliSpace Association
                             p
-                                | Leading a team of four software engineers in ﬂight software testing and requirements deﬁnition. Actively collaborating with the creation and development of secure and well-designed CubeSat satellite software.
+                                | Led a team of four software engineers in flight software testing and requirements definition. Actively collaborated on the creation of secure and well-designed CubeSat software, balancing software quality, mission constraints, and cross-team coordination.
                         .flex-shrink-0
                             span.text-primary 11/2021 - 09/2023
                             .span.text-secondary Milan, Italy
@@ -140,6 +163,33 @@ html(lang='en')
                                 | Developed various software solutions, including web apps, backends, and neural network algorithms for multiple clients. I gained experience in working with lots of tasks for numerous customers.
                         .flex-shrink-0
                             span.text-primary 2022 - Present
+
+            hr.m-0
+
+            // Publications
+            section#publications.resume-section
+                .resume-section-content
+                    h2.mb-5 Publications
+                    p#honeysat-paper
+                        | López-Morales, E., Planta, U.,
+                        strong Marra, G.,
+                        | et al. (2026).
+                        i HoneySat: A Network-based Satellite Honeypot Framework.
+                        | NDSS 2026.
+                        a(href='https://www.ndss-symposium.org/wp-content/uploads/2026-f537-paper.pdf') (PDF on NDSS Website)
+                    p
+                        strong Marra, G.,
+                        | Planta, U., Wüstenberg, P., & Abbasi, A. (2024).
+                        i On the Feasibility of CubeSats Application Sandboxing for Space Missions.
+                        | Workshop SpaceSec 2024, at the NDSS Symposium 2024.
+                        a(href='https://doi.org/10.14722/spacesec.2024.23033') (PDF on NDSS Website)
+                    p
+                        | Planta, U., Rederlechner, J.,
+                        strong Marra, G.,
+                        | & Abbasi, A. (2024).
+                        i Let Me Do It For You: On the Feasibility of Inter-Satellite Friendly Jamming.
+                        | 2024 Security for Space Systems (3S), Noordwijk, Netherlands.
+                        a(href='https://doi.org/10.23919/3S60530.2024.10592285') (PDF on IEEE Website)
 
             hr.m-0
 
@@ -181,7 +231,13 @@ html(lang='en')
             section#skills.resume-section
                 .resume-section-content
                     h2.mb-5 Programming Languages & Skills
+                    .subheading.mb-3 Core Languages
                     ul.fa-ul.mb-0
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | Rust
+
                         li
                             span.fa-li
                                 i.fas.fa-check
@@ -202,6 +258,8 @@ html(lang='en')
                                 i.fas.fa-check
                             | JavaScript
 
+                    .subheading.mb-3.mt-4 Application, Backend & Platform Work
+                    ul.fa-ul.mb-0
                         li
                             span.fa-li
                                 i.fas.fa-check
@@ -220,12 +278,34 @@ html(lang='en')
                         li
                             span.fa-li
                                 i.fas.fa-check
+                            | gRPC
+
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | Protocol Buffers
+
+                        li
+                            span.fa-li
+                                i.fas.fa-check
                             | ROS2
 
                         li
                             span.fa-li
                                 i.fas.fa-check
                             | MongoDB
+
+                    .subheading.mb-3.mt-4 Additional Technical Areas
+                    ul.fa-ul.mb-0
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | Space cybersecurity
+
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | Embedded and satellite software
 
                         li
                             span.fa-li
@@ -284,20 +364,42 @@ html(lang='en')
 
             hr.m-0
 
-            // Publications
-            section#publications.resume-section
+            // Languages
+            section#languages.resume-section
                 .resume-section-content
-                    h2.mb-5 Publications
-                    p
-                        | Marra, G., Planta, U., Wüstenberg, P., & Abbasi, A. (2024).
-                        i On the Feasibility of CubeSats Application Sandboxing for Space Missions.
-                        | Workshop SpaceSec 2024, at the NDSS Symposium 2024.
-                        a(href='https://doi.org/10.14722/spacesec.2024.23033') (PDF on NDSS Website)
-                    p
-                        | Planta, U., Rederlechner, J., Marra, G., & Abbasi, A. (2024).
-                        i Let Me Do It For You: On the Feasibility of Inter-Satellite Friendly Jamming.
-                        | 2024 Security for Space Systems (3S), Noordwijk, Netherlands.
-                        a(href='https://doi.org/10.23919/3S60530.2024.10592285') (PDF on IEEE Website)
+                    h2.mb-5 Languages
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-4
+                        .flex-grow-1
+                            h3.mb-0 Italian
+                            .subheading.mb-2 Mother Tongue
+                            p Native command in professional and everyday contexts.
+                        .flex-shrink-0
+                            span.text-primary Native
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-4
+                        .flex-grow-1
+                            h3.mb-0 English
+                            .subheading.mb-2 Full Professional Proficiency
+                            p Comfortable across technical writing, international collaboration, presentations, and research communication.
+                        .flex-shrink-0
+                            span.text-primary Full professional
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-4
+                        .flex-grow-1
+                            h3.mb-0 French
+                            .subheading.mb-2 Basic Professional Proficiency
+                            p Able to work through everyday professional interactions and practical communication.
+                        .flex-shrink-0
+                            span.text-primary Basic professional
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between
+                        .flex-grow-1
+                            h3.mb-0 German
+                            .subheading.mb-2 Elementary Proficiency
+                            p Basic understanding suitable for simple exchanges and introductory communication.
+                        .flex-shrink-0
+                            span.text-primary Elementary
 
             hr.m-0
 
